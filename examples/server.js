@@ -77,43 +77,6 @@ router.post('/extend/post', function (req, res) {
     })
 })
 
-router.get('/extend/get', function (req, res) {
-    res.json({
-        msg: `hello world`
-    })
-})
-
-router.options('/extend/options', function (req, res) {
-    res.json({
-        msg: `hello world`
-    })
-})
-
-router.delete('/extend/delete', function (req, res) {
-    res.json({
-        msg: `hello world`
-    })
-})
-
-router.head('/extend/head', function (req, res) {
-    res.json({
-        msg: `hello world`
-    })
-})
-
-router.put('/extend/put', function (req, res) {
-    res.json({
-        msg: `hello world`
-    })
-})
-
-router.patch('/extend/patch', function (req, res) {
-    res.json({
-        msg: `hello world`
-    })
-})
-
-
 
 const port = process.env.PORT || 8080
 module.exports = app.listen(port, () => {
