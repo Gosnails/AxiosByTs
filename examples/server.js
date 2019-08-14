@@ -71,6 +71,50 @@ router.get('/error/timeout', function (req, res) {
     }, 3000)
 })
 
+router.post('/extend/post', function (req, res) {
+    res.json({
+        msg: `hello world`
+    })
+})
+
+router.get('/extend/get', function (req, res) {
+    res.json({
+        msg: `hello world`
+    })
+})
+
+router.options('/extend/options', function (req, res) {
+    res.json({
+        msg: `hello world`
+    })
+})
+
+router.delete('/extend/delete', function (req, res) {
+    res.json({
+        msg: `hello world`
+    })
+})
+
+router.head('/extend/head', function (req, res) {
+    res.json({
+        msg: `hello world`
+    })
+})
+
+router.put('/extend/put', function (req, res) {
+    res.json({
+        msg: `hello world`
+    })
+})
+
+router.patch('/extend/patch', function (req, res) {
+    res.json({
+        msg: `hello world`
+    })
+})
+
+
+
 const port = process.env.PORT || 8080
 module.exports = app.listen(port, () => {
     console.log(`Server listening on http://localhost:${port}, Ctrl+C to stop`)
