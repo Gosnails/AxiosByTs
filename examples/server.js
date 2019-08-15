@@ -88,6 +88,14 @@ router.get('/extend/user', function (req, res) {
     })
 })
 
+function registerInterceptorRouter() {
+    router.get('/interceptor/get', function (req, res) {
+        res.end('hello')
+    })
+}
+
+registerInterceptorRouter()
+
 
 const port = process.env.PORT || 8080
 module.exports = app.listen(port, () => {
