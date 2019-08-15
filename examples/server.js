@@ -94,7 +94,14 @@ function registerInterceptorRouter() {
     })
 }
 
+function registerConfigRouter () {
+    router.post('/config/post', function(req, res) {
+      res.json(req.body)
+    })
+  }
+
 registerInterceptorRouter()
+registerConfigRouter()
 
 
 const port = process.env.PORT || 8080
